@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/main.css">
+    <title>HTML, CSS & Git Basics</title>
+</head>
+<body>
+    <h1>My CV</h1>
+    <div class="main-container">
+        <div class="photo">
+            <img src="./assets/Photo.jpg" alt="It's me">
+        </div>
+        <div class="cv">
+            <ol>
+                <li>Имя, фамилия (реальные)
+                    <p>Дмитрий Гаркуша</p>
+                </li>
+                <li>Контакты
+                    <p>+375 29 327-78-98</p>
+                </li>
+                <li>Summary
+                    <p>Прежде всего хочу занитьмася тем, что действительно нравится. Программирование вызывает
+                        большой интерес, страсть к нему, работая не замечаю времени.
+                        Хочу стать хорошим специалистом в программировании, проявлять себя и свой потенциал.
+                        Хорошо и быстро обучаюсь, не боюсь сложных задач.
+                        Умею работать в команде и добиваться поставленных целей.
+                    </p>
+                    <ul>Читаю такие книги по программированию, как:
+                        <li>Дэвид Флэнаган "JavaScript Подробное руководство"</li>
+                        <li>Николас Закас "JavaScript для профессиональных веб-разработчиков"</li>
+                        <li>Николас Закас "ECMAScript 6 для разработчиков"</li>
+                    </ul>
+                </li>
+                <li>Skills
+                    <p>html, css, sass, js, jquery, angular, react, react native, node.js, sql, git.</p>
+                </li>
+                <li>Примеры кода
+                    <pre><em>
+                        function getZerosCount(number, base) {
+                            let obj = {};
+                            let mas = [];
+                            let c = 2;
+
+                            while (base > 1) {
+                                if (base % c === 0) {
+                                    let n = base / c;
+                                    obj[c] ? obj[c]++ : obj[c]=1;
+                                    base = n;
+                                } else {
+                                    c++;
+                                }
+                            }
+
+                            for (let p in obj) {
+                                if (!obj.hasOwnProperty(p)) { continue; }
+                                let r = 0;
+                                let num = +p;
+
+                                while (num < number) {
+                                    r+= parseInt(number / num);
+                                    num = num * p;
+                                }
+
+                                mas.push(parseInt(r / obj[p]));
+                            }
+
+                            return Math.min(...mas);
+                        }
+                    </em></pre>
+                </li>
+                <li>Опыт
+                    <p>Занимался созданием кроссплатформенного приложения на react native. Приложение
+                        отслеживает историю передвижений на карте, позволяет создавать метки и получать
+                        уведомления о входе/ выходе из метки. В текущий момент работаю фронтэндером в компании,
+                        занимающейся автоматизацией ресторанного бизнеса.
+                        Работаю с фронтом - jquery(поддержка) и react’ом (разработка). Работаю два месяца.
+                    </p>
+                </li>
+                <li>Образование
+                    <p>БГУИР, инженерно-экономический факультет, маркетолог-экономист.
+                        Курсы: программирование под платформу Android, 2014 год.
+                        Онлайн-обучение: html, css, sass, js, jquery, angular, react, react native, node.js, sql.
+                    </p>
+                </li>
+                <li>Уровень английского
+                    <p>A2+, есть опыт общения на английском на работе, в текущий момент самостоятельно
+                        дополнительно изучаю английский</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

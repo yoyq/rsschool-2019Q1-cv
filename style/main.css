@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1024px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #323232;
+}
+
+.main-container {
+    display: grid;
+    justify-items: center;
+    background-color: #2eb398;
+}
+
+.photo {
+    position: fixed;
+    top: 0;
+    width: 300px;
+}
+
+img {
+    width: 100%;
+}
+
+.cv {
+    width: 100%;
+}
+
+ol {
+    margin-top: 5px;
+    margin-left: 330px;
+}
+
+ol li {
+    font-family: Arial, serif;
+    margin-top: 5px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+ul, ul li {
+    font-family: "Comic Sans MS", serif;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+p {
+    padding-top: 5px;
+    font-family: "Comic Sans MS", serif;
+    font-weight: bold;
+    hyphens: auto;
+}
