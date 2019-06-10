@@ -4,7 +4,8 @@
 }
 
 body {
-    width: 1024px;
+    max-width: 1024px;
+    margin: auto;
 }
 
 h1 {
@@ -57,5 +58,4 @@ p {
     padding-top: 5px;
     font-family: "Comic Sans MS", serif;
     font-weight: bold;
-    hyphens: auto;
 }
